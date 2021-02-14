@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="441" id="KGk-i7-Jjw" customClass="PostTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="441"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="441"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVF-CS-fy6">
+                        <rect key="frame" x="0.0" y="10" width="316" height="316"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lVF-CS-fy6" secondAttribute="height" multiplier="1:1" id="xGM-kv-9GS"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsA-Wy-gOg">
+                        <rect key="frame" x="26" y="336" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="XS1-zc-Yqb"/>
+                            <constraint firstAttribute="width" constant="40" id="dFa-jl-Vtp"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="like_none"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-P9-OoL">
+                        <rect key="frame" x="76" y="345.5" width="40" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6gf-LA-ZKl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAb-Od-ibm">
+                        <rect key="frame" x="126" y="345.5" width="164" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbe-pz-NPT">
+                        <rect key="frame" x="26" y="376.5" width="264" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rAb-Od-ibm" firstAttribute="centerY" secondItem="SsA-Wy-gOg" secondAttribute="centerY" id="3ES-Ul-0Q8"/>
+                    <constraint firstItem="c8a-P9-OoL" firstAttribute="centerY" secondItem="SsA-Wy-gOg" secondAttribute="centerY" id="4qx-Pg-x4p"/>
+                    <constraint firstItem="lVF-CS-fy6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6e3-fL-seK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rAb-Od-ibm" secondAttribute="trailing" constant="10" id="Dxp-dQ-9Tj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kbe-pz-NPT" secondAttribute="bottom" constant="10" id="KPb-lj-xEa"/>
+                    <constraint firstItem="lVF-CS-fy6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Mg1-wT-4e9"/>
+                    <constraint firstItem="c8a-P9-OoL" firstAttribute="leading" secondItem="SsA-Wy-gOg" secondAttribute="trailing" constant="10" id="eQe-yw-RhX"/>
+                    <constraint firstItem="kbe-pz-NPT" firstAttribute="top" secondItem="rAb-Od-ibm" secondAttribute="bottom" constant="10" id="f35-nw-Rc3"/>
+                    <constraint firstAttribute="trailing" secondItem="lVF-CS-fy6" secondAttribute="trailing" id="fn0-4i-NUf"/>
+                    <constraint firstItem="kbe-pz-NPT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="heu-h0-xZb"/>
+                    <constraint firstItem="SsA-Wy-gOg" firstAttribute="top" secondItem="lVF-CS-fy6" secondAttribute="bottom" constant="10" id="j8Z-Lh-paa"/>
+                    <constraint firstItem="SsA-Wy-gOg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="mR2-xe-jlT"/>
+                    <constraint firstItem="rAb-Od-ibm" firstAttribute="leading" secondItem="c8a-P9-OoL" secondAttribute="trailing" constant="10" id="oeT-97-X5E"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kbe-pz-NPT" secondAttribute="trailing" constant="10" id="u1a-Z7-XMH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="captionLabel" destination="kbe-pz-NPT" id="6T7-dN-sAa"/>
+                <outlet property="dateLabel" destination="rAb-Od-ibm" id="2Tr-cO-jtt"/>
+                <outlet property="likeButton" destination="SsA-Wy-gOg" id="aCr-FY-dHD"/>
+                <outlet property="likeLabel" destination="c8a-P9-OoL" id="MN8-iP-VGc"/>
+                <outlet property="postImageView" destination="lVF-CS-fy6" id="Sfi-To-ZCD"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="118.19196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like_none" width="40" height="40"/>
+    </resources>
+</document>
