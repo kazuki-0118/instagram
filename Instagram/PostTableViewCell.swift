@@ -14,8 +14,11 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var commentNameLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
+    var commentadd = ""
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -57,5 +60,13 @@ class PostTableViewCell: UITableViewCell {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
         }
+        // コメントネームの表示
+        
+        
+        for comment in postData.commentName {
+            commentadd += comment + "\n"
+            self.commentNameLabel.text = commentadd
+        }
+        
     }
 }
