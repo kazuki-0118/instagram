@@ -60,15 +60,17 @@ class PostTableViewCell: UITableViewCell {
             let buttonImage = UIImage(named: "like_none")
             self.likeButton.setImage(buttonImage, for: .normal)
         }
+        
+        // コメントネームの初期化
+        commentadd = ""
+        commentNameLabel.text = ""
+        
         // コメントネームの表示
         
         for comment in postData.commentName {
             commentadd += comment + "\n"
             self.commentNameLabel.text = commentadd
         }
-        
-        // コメントネームの初期化
-            commentadd = ""
         
     }
 }
