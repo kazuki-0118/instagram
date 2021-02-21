@@ -62,11 +62,13 @@ class PostTableViewCell: UITableViewCell {
         }
         // コメントネームの表示
         
-        
         for comment in postData.commentName {
             commentadd += comment + "\n"
             self.commentNameLabel.text = commentadd
         }
+        
+        // コメントネームの初期化
+            commentadd = ""
         
     }
 }
